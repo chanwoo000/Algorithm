@@ -8,4 +8,4 @@ for i in range(1,len(word1)+1):
         else:
             lcs[i][j] = max(lcs[i-1][j], lcs[i][j-1])
             
-print(max(map(max,lcs)))
+print(lcs[len(word1)][len(word2)])
